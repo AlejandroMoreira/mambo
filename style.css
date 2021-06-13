@@ -1,0 +1,33 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    background-color: orange;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+.audiocontainer {
+    display: grid;
+    grid-template-areas: "a b c";
+}
+
+.audiocontainer__item {
+    grid-area: b;
+    height: 4rem;
+}
